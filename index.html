@@ -6,85 +6,41 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background: #0b1220;
     color: white;
 }
 
-/* TOP BAR */
 .header {
     background: linear-gradient(135deg, #38bdf8, #6366f1);
-    padding: 30px 20px;
+    padding: 30px;
     text-align: center;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 32px;
-}
-
-.header p {
-    margin: 5px 0 0;
-    opacity: 0.9;
-}
-
-/* SEARCH BAR */
-.search {
-    padding: 15px;
-    text-align: center;
-}
-
-.search input {
-    width: 80%;
-    max-width: 400px;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-}
-
-/* GRID */
 .container {
-    padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
+    padding: 20px;
 }
 
-/* GAME CARD */
 .card {
     background: #1e293b;
-    border-radius: 15px;
     padding: 15px;
+    border-radius: 12px;
     text-align: center;
-    transition: 0.2s;
-    box-shadow: 0 0 0 rgba(0,0,0,0);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-    background: #273449;
-}
-
-.card h3 {
-    margin: 10px 0;
-}
-
-/* BUTTON */
 button {
-    padding: 10px 14px;
+    margin-top: 10px;
+    padding: 10px;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
     background: #38bdf8;
-    color: black;
     font-weight: bold;
-    transition: 0.2s;
-}
-
-button:hover {
-    background: #0ea5e9;
+    cursor: pointer;
 }
 </style>
 
@@ -92,66 +48,26 @@ button:hover {
 
 <body>
 
-<div class="header">
-    <h1>Portal Games Plus</h1>
-    <p>Play games instantly — no downloads</p>
-</div>
-
-<div class="search">
-    <input type="text" placeholder="Search games... (visual only for now)">
-</div>
+<div class="header">Portal Games Plus</div>
 
 <div class="container">
 
     <div class="card">
-        <h3>DigDig.io</h3>
-        <button onclick="window.open('https://digdig.io','_blank')">
-            Play
-        </button>
-    </div>
-
-    <div class="card">
-        <h3>Cookie Clicker</h3>
-        <button onclick="window.open('https://orteil.dashnet.org/cookieclicker/','_blank')">
-            Play
-        </button>
+        <h3>Slither.io</h3>
+        <button onclick="location.href='play/slither.html'">Play</button>
     </div>
 
     <div class="card">
         <h3>Run 3</h3>
-        <button onclick="window.open('https://run3.io','_blank')">
-            Play
-        </button>
+        <button onclick="location.href='play/run3.html'">Play</button>
     </div>
 
     <div class="card">
-        <h3>2048</h3>
-        <button onclick="window.open('https://play2048.co','_blank')">
-            Play
-        </button>
+        <h3>Happy Wheels</h3>
+        <button onclick="location.href='play/happywheels.html'">Play</button>
     </div>
 
 </div>
 
 </body>
 </html>
-<div class="card">
-    <h3>Slither.io</h3>
-    <button onclick="window.open('https://slither.io','_blank')">
-        Play
-    </button>
-</div>
-
-<div class="card">
-    <h3>Run 3</h3>
-    <button onclick="window.open('https://run3.io','_blank')">
-        Play
-    </button>
-</div>
-
-<div class="card">
-    <h3>Happy Wheels</h3>
-    <button onclick="window.open('https://totaljerkface.com/happy_wheels.tjf','_blank')">
-        Play
-    </button>
-</div>
